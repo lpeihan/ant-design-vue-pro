@@ -28,7 +28,8 @@ import {
   Avatar,
   Tooltip,
   Tag,
-  message
+  message,
+  AutoComplete
 } from "ant-design-vue";
 import Authorized from "./components/Authorized";
 import Auth from "./directives/auth";
@@ -59,6 +60,7 @@ Vue.use(Tabs);
 Vue.use(Spin);
 Vue.use(List);
 Vue.use(Tag);
+Vue.use(AutoComplete);
 Vue.prototype.$message = message;
 
 const i18n = new VueI18n({

@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <header-search></header-search>
     <notice-icon-view />
     <a-dropdown>
       <a-icon type="global" />
@@ -21,8 +22,13 @@
 
 <script>
 import NoticeIconView from "@/components/GlobalHeader/NoticeIconView";
+import HeaderSearch from "@/components/HeaderSearch";
+
 export default {
-  components: { NoticeIconView },
+  components: {
+    NoticeIconView,
+    HeaderSearch
+  },
   methods: {
     localeChange({ key }) {
       this.$router.push({ query: { ...this.$route.query, locale: key } });
