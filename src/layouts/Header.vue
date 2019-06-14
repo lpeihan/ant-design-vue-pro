@@ -3,7 +3,9 @@
     <header-search></header-search>
     <notice-icon-view />
     <a-dropdown>
-      <a-icon type="global" />
+      <span class="header-global-dropdown">
+        <a-icon type="global" />
+      </span>
       <a-menu
         slot="overlay"
         @click="localeChange"
@@ -38,9 +40,26 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .header {
   float: right;
-  margin-right: 30px;
+  height: 100%;
+  overflow: hidden;
+  line-height: 64px;
+
+  .header-global-dropdown {
+    padding: 0 12px;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      background: @primary-1;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 </style>

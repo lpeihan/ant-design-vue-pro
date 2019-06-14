@@ -50,16 +50,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "~ant-design-vue/es/style/themes/default.less";
-
 .header-search {
   display: inline-block;
   padding: 0 12px;
+  cursor: pointer;
 
   svg {
     width: 16px;
     height: 16px;
-    cursor: pointer;
   }
 
   /deep/ .ant-select-search {

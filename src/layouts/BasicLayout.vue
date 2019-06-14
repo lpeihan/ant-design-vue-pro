@@ -75,9 +75,10 @@ export default {
   padding: 0 20px;
   line-height: 64px;
   font-size: 20px;
+  cursor: pointer;
 
   &:hover {
-    background: #eeeeee;
+    background: @primary-1;
   }
 }
 

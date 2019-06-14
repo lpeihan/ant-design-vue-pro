@@ -66,5 +66,18 @@ module.exports = {
         }
       }
     }
+  },
+  pluginOptions: {
+    // https://www.npmjs.com/package/vue-cli-plugin-style-resources-loader
+    // 在每个 .less .vue 文件引入下面的less文件
+    "style-resources-loader": {
+      patterns: [
+        path.resolve(
+          __dirname,
+          "node_modules/ant-design-vue/es/style/themes/default.less"
+        )
+      ],
+      preProcessor: "less"
+    }
   }
 };

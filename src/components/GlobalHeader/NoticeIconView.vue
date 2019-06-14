@@ -108,12 +108,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .action {
   display: inline-block;
   height: 100%;
   padding: 0 12px;
   cursor: pointer;
   transition: all 0.3s;
+  &:hover {
+    background: @primary-1;
+  }
 }
 </style>
